@@ -219,7 +219,7 @@ export default function MainInfo() {
                                                 <h3 className={styles.projectTitle}>Streaming Music App</h3>
 
                                                 <button className={styles.projectButtonSmall}>
-                                                    <HiLink className={styles.buttonLink} />
+                                                    <a href='https://app-musicfy.vercel.app/' target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
                                                 </button>
                                             </div>
                                         </div>
@@ -235,7 +235,7 @@ export default function MainInfo() {
                                                 <h3 className={styles.projectTitle}>Countries App</h3>
 
                                                 <button className={styles.projectButtonSmall}>
-                                                    <HiLink className={styles.buttonLink} />
+                                                    <a target="_blank" href='https://pi-countriesjc.vercel.app/countries' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
                                                 </button>
                                             </div>
                                         </div>
@@ -251,7 +251,7 @@ export default function MainInfo() {
                                                 <h3 className={styles.projectTitle}>Portfolio</h3>
 
                                                 <button className={styles.projectButtonSmall}>
-                                                    <HiLink className={styles.buttonLink} />
+                                                    <a target="_blank" href='https://portfolio-jc-steel.vercel.app/' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
                                                 </button>
                                             </div>
                                         </div>
