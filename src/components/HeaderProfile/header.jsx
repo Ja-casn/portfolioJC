@@ -36,10 +36,10 @@ export default function Header() {
 
                             <ul className={styles.profileSocial}>
                                 <a href='https://www.linkedin.com/in/jacasanova98/' target='_blank' rel="noopener noreferrer" className={styles.profileSocialLink}>
-                                    <FaLinkedin />
+                                    <FaLinkedin className={styles.iconsRed}/>
                                 </a>
                                 <a href='https://github.com/Ja-casn' target='_blank' rel="noopener noreferrer" className={styles.profileSocialLink}>
-                                    <FaGithub />
+                                    <FaGithub className={styles.iconsRed}/>
                                 </a>
                             </ul>
                         </div>

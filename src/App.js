@@ -11,7 +11,7 @@ function App() {
     <>
     <Header />
     <MainInfo />
-    <Contact />
+    {/* <Contact /> */}
     <Footer />
     </>
   );
