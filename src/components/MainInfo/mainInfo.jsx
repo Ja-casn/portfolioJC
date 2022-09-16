@@ -1,9 +1,6 @@
 import React from 'react'
 import styles from '../MainInfo/main.module.css'
-import img1 from '../assets/img1.jpg'
 import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.jpg'
-import img6 from '../assets/img6.jpg'
 import { HiLink } from 'react-icons/hi'
 import { BsCheckCircle } from 'react-icons/bs'
 import { Fade } from 'react-awesome-reveal'
@@ -245,13 +242,13 @@ export default function MainInfo() {
                                     </div>
                                     {/* ARTICLE - 3 */}
                                     <div className={styles.projectsCard}>
-                                        <img src={img3} alt='reference1' className={styles.projectsImg} />
+                                        <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663293933/portfolio_qz8wsl.png'} alt='reference1' className={styles.projectsImg} />
 
 
                                         <div className={styles.projectsModal}>
                                             <div>
-                                                <span className={styles.projectSubtitle}>Movil</span>
-                                                <h3 className={styles.projectTitle}>Fast food app</h3>
+                                                <span className={styles.projectSubtitle}>Web</span>
+                                                <h3 className={styles.projectTitle}>Portfolio</h3>
 
                                                 <button className={styles.projectButtonSmall}>
                                                     <HiLink className={styles.buttonLink} />
@@ -261,13 +258,13 @@ export default function MainInfo() {
                                     </div>
                                     {/* ARTICLE - 4 */}
                                     <div className={styles.projectsCard}>
-                                        <img src={img6} alt='reference1' className={styles.projectsImg} />
+                                        <img src={img2} alt='reference1' className={styles.projectsImg} />
 
 
                                         <div className={styles.projectsModal}>
                                             <div>
-                                                <span className={styles.projectSubtitle}>Design</span>
-                                                <h3 className={styles.projectTitle}>Music app design</h3>
+                                                <span className={styles.projectSubtitle}>Web</span>
+                                                <h3 className={styles.projectTitle}>In process</h3>
 
                                                 <button className={styles.projectButtonSmall}>
                                                     <HiLink className={styles.buttonLink} />

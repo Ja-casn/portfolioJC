@@ -51,17 +51,17 @@ export default function Header() {
                         <div className={styles.profileInfoGroup}>
                             <h3 className={styles.profileInfoNumber}>1</h3>
                             <p className={styles.profileInfoDescription}>
-                                Years of <br /> work
+                                Year of <br /> work
                             </p>
                         </div>
                         <div className={styles.profileInfoGroup}>
-                            <h3 className={styles.profileInfoNumber}>+5</h3>
+                            <h3 className={styles.profileInfoNumber}>+3</h3>
                             <p className={styles.profileInfoDescription}>
                                 Completed <br /> projects
                             </p>
                         </div>
                         <div className={styles.profileInfoGroup}>
-                            <h3 className={styles.profileInfoNumber}>+10</h3>
+                            <h3 className={styles.profileInfoNumber}>+5</h3>
                             <p className={styles.profileInfoDescription}>
                                 Satisfied <br /> customers
                             </p>
