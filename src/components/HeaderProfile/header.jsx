@@ -35,12 +35,12 @@ export default function Header() {
                             <h2 className={styles.profileProfession}>Web developer</h2>
 
                             <ul className={styles.profileSocial}>
-                                <span href='https://www.linkedin.com/in/jacasanova98/' className={styles.profileSocialLink}>
+                                <a href='https://www.linkedin.com/in/jacasanova98/' target='_blank' rel="noopener noreferrer" className={styles.profileSocialLink}>
                                     <FaLinkedin />
-                                </span>
-                                <span href='https://github.com/Ja-casn' className={styles.profileSocialLink}>
+                                </a>
+                                <a href='https://github.com/Ja-casn' target='_blank' rel="noopener noreferrer" className={styles.profileSocialLink}>
                                     <FaGithub />
-                                </span>
+                                </a>
                             </ul>
                         </div>
                     </div>

@@ -81,6 +81,7 @@
     font-size: 1.25rem;
     /* color: var(--title-color); */
     transform: .3s;
+    cursor: pointer;
 }
 
 .profileSocialLink:hover{

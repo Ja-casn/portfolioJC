@@ -1,12 +1,12 @@
-.formContainer{
+.formContainer {
     background-color: rgba(81, 79, 79, 0.474);
     margin: 0 auto;
     width: 100%;
     height: 380px;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
-.formInfo{
+.formInfo {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -15,27 +15,27 @@
     width: 50%;
 }
 
-.labelNames{
+.labelNames {
     color: var(--title-color);
     margin-top: 5px;
+    width: 100%;
 }
 
-.textArea{
+.textArea {
     width: 100%;
     margin-top: 20px;
     height: 10rem;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 0.5rem;
     outline: none;
     border: none;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    ;
     padding: 5px;
 }
 
 
-.inputStyles{
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+.inputStyles {
+    border-radius: 0.5rem;
     width: 100%;
     height: 30px;
     padding: 5px;
@@ -43,19 +43,18 @@
     border: none;
 }
 
-.btnSubmit{
+.btnSubmit {
     width: 80px;
     height: 40px;
     font-size: 20px;
     margin-top: 10px;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 0.5rem;
     border: none;
     outline: none;
     background-color: var(--container-color);
     cursor: pointer;
 }
 
-.btnSubmit:hover{
+.btnSubmit:hover {
     background-color: hsl(207, 8%, 80%);
 }

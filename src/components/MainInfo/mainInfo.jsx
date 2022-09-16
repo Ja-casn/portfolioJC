@@ -204,78 +204,74 @@ export default function MainInfo() {
                                 </div>
                             </Fade>
 
-
-                            <Fade direction='up'>
-                                <h1 id='projects'>PROJECTS</h1>
-                                <div className={styles.projectsContentGrid}>
-                                    {/* ARTICLE - 1 */}
-                                    <div className={styles.projectsCard}>
-                                        <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663290969/musicfyApp-pfGroup_bytuao.png'} alt='reference1' className={styles.projectsImg} />
+                            <h1 id='projects'>PROJECTS</h1>
+                            <div className={styles.projectsContentGrid}>
+                                {/* ARTICLE - 1 */}
+                                <div className={styles.projectsCard}>
+                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663290969/musicfyApp-pfGroup_bytuao.png'} alt='reference1' className={styles.projectsImg} />
 
 
-                                        <div className={styles.projectsModal}>
-                                            <div>
-                                                <span className={styles.projectSubtitle}>Web</span>
-                                                <h3 className={styles.projectTitle}>Streaming Music App</h3>
+                                    <div className={styles.projectsModal}>
+                                        <div>
+                                            <span className={styles.projectSubtitle}>Web</span>
+                                            <h3 className={styles.projectTitle}>Streaming Music App</h3>
 
-                                                <button className={styles.projectButtonSmall}>
-                                                    <a href='https://app-musicfy.vercel.app/' target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* ARTICLE - 2 */}
-                                    <div className={styles.projectsCard}>
-                                        <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663292106/countries1_hihbrb.png'} alt='reference1' className={styles.projectsImg} />
-
-
-                                        <div className={styles.projectsModal}>
-                                            <div>
-                                                <span className={styles.projectSubtitle}>Web</span>
-                                                <h3 className={styles.projectTitle}>Countries App</h3>
-
-                                                <button className={styles.projectButtonSmall}>
-                                                    <a target="_blank" href='https://pi-countriesjc.vercel.app/countries' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* ARTICLE - 3 */}
-                                    <div className={styles.projectsCard}>
-                                        <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663293933/portfolio_qz8wsl.png'} alt='reference1' className={styles.projectsImg} />
-
-
-                                        <div className={styles.projectsModal}>
-                                            <div>
-                                                <span className={styles.projectSubtitle}>Web</span>
-                                                <h3 className={styles.projectTitle}>Portfolio</h3>
-
-                                                <button className={styles.projectButtonSmall}>
-                                                    <a target="_blank" href='https://portfolio-jc-steel.vercel.app/' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* ARTICLE - 4 */}
-                                    <div className={styles.projectsCard}>
-                                        <img src={img2} alt='reference1' className={styles.projectsImg} />
-
-
-                                        <div className={styles.projectsModal}>
-                                            <div>
-                                                <span className={styles.projectSubtitle}>Web</span>
-                                                <h3 className={styles.projectTitle}>In process</h3>
-
-                                                <button className={styles.projectButtonSmall}>
-                                                    <HiLink className={styles.buttonLink} />
-                                                </button>
-                                            </div>
+                                            <button className={styles.projectButtonSmall}>
+                                                <a href='https://app-musicfy.vercel.app/' target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </Fade>
+                                {/* ARTICLE - 2 */}
+                                <div className={styles.projectsCard}>
+                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663292106/countries1_hihbrb.png'} alt='reference1' className={styles.projectsImg} />
 
 
+                                    <div className={styles.projectsModal}>
+                                        <div>
+                                            <span className={styles.projectSubtitle}>Web</span>
+                                            <h3 className={styles.projectTitle}>Countries App</h3>
+
+                                            <button className={styles.projectButtonSmall}>
+                                                <a target="_blank" href='https://pi-countriesjc.vercel.app/countries' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* ARTICLE - 3 */}
+                                <div className={styles.projectsCard}>
+                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663293933/portfolio_qz8wsl.png'} alt='reference1' className={styles.projectsImg} />
+
+
+                                    <div className={styles.projectsModal}>
+                                        <div>
+                                            <span className={styles.projectSubtitle}>Web</span>
+                                            <h3 className={styles.projectTitle}>Portfolio</h3>
+
+                                            <button className={styles.projectButtonSmall}>
+                                                <a target="_blank" href='https://portfolio-jc-steel.vercel.app/' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* ARTICLE - 4 */}
+                                <div className={styles.projectsCard}>
+                                    <img src={img2} alt='reference1' className={styles.projectsImg} />
+
+
+                                    <div className={styles.projectsModal}>
+                                        <div>
+                                            <span className={styles.projectSubtitle}>Web</span>
+                                            <h3 className={styles.projectTitle}>In process</h3>
+
+                                            <button className={styles.projectButtonSmall}>
+                                                <HiLink className={styles.buttonLink} />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -291,7 +287,7 @@ export default function MainInfo() {
             <br />
             <br />
             <Fade direction='left'>
-            <h1 className={styles.contactTitle} id='contact'>CONTACT</h1>
+                <h1 className={styles.contactTitle} id='contact'>CONTACT</h1>
             </Fade>
         </Router>
     )

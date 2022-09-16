@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <Fade direction='up'>
         <div className={styles.formContainer}>
-            <form action="https://formsubmit.co/your@email.com" method="POST" className={styles.formInfo}>
+            <form action="https://formsubmit.co/jacapersonal04@gmail.com" method="POST" className={styles.formInfo}>
                 <label className={styles.labelNames}>Name</label>
                 <input type="text" placeholder='Name' className={styles.inputStyles} />
                 <label className={styles.labelNames}>Email</label>

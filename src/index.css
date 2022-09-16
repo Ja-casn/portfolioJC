@@ -6,16 +6,16 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   /*
-      Blue: hsl(207, 90%, 61%)
+      Blue: hsl(230, 90%, 30%)
       Purple: hsl(250, 66%, 75%)
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
       test: hsl(207, 8%, 80%)
   */
 
-  --hue: 207;
+  --hue: 230;
   --sat: 90%;
-  --lig: 61%;
+  --lig: 30%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -60,6 +60,7 @@ body {
   transition: .3s; /* For animation dark mode */
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -71,9 +72,9 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
+a:visited {
+  color: var(--title-color);
+  }
 
 img {
   max-width: 100%;
