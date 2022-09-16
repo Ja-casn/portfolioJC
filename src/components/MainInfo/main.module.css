@@ -1,0 +1,258 @@
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filterContent {
+    margin: 2rem 0 2.5rem;
+    background-color: var(--text-color-lighten);
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.filtersButton {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.filtersButton:hover {
+    background-color: var(--body-color);
+}
+
+/* PROJECTS SECTION */
+
+.projectsCard {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 10px 10px 0px 10px;
+}
+
+.projectsCard img {
+    width: 100%;
+    height: 100%;
+}
+
+.projectsModal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* bottom: 0; */
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(180deg,
+            hsl(var(--hue), 24%, 40%, .3) 0% hsl(var(--hue), 24%, 4%, 1) 95%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: .8s;
+
+}
+
+.projectButtonSmall {
+    border-radius: 7px;
+    width: 34px;
+    height: 34px;
+    transform: .3s;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--text-color-lighten);
+    cursor: pointer;
+}
+
+.projectButtonSmall:hover{
+    background-color: hsl(207, 8%, 80%)
+}
+
+.projectsImg{
+    object-fit: cover;
+}
+
+.buttonLink{
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.projectSubtitle,
+.projectTitle {
+    display: flex;
+    color: #fff;
+}
+
+.projectSubtitle {
+    font-size: var(--smaller-font-size);
+}
+
+.projectTitle {
+    font-size: var(--h3-font-size);
+    margin-bottom: .75rem;
+}
+
+.projectsCard:hover .projectsModal {
+    background-color: rgba(3, 3, 3, 0.454);
+    bottom: 0;
+}
+
+/* SKILLS */
+
+.skillsContentGrid {
+    row-gap: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillsTitle {
+    font-size: var(--h3-font-size);
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 1.5rem;
+}
+
+.skillsBox {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skillsGroup {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skillsData {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skillsName {
+    text-align: start;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.skillsLevel {
+    font-size: var(--smaller-font-size);
+}
+
+.checkCircle {
+    font-size: 1rem;
+    color: var(--first-color);
+}
+
+
+/* OCULTAR Y MOSTRAR PROJECTS & SKILLS */
+.projectsContentGridOff {
+    display: none;
+}
+
+.skillsContentGridOff {
+    display: none;
+}
+
+.projectsContentGrid {
+    display: grid;
+}
+
+.skillsContentGrid {
+    display: grid;
+}
+
+.btnUp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 5px 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--text-color-lighten);
+}
+
+.arrowButton{
+    color: var(--title-color);
+    font-size: 20px;
+}
+
+.contactTitle{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.titleButtons{
+    color: var(--title-color)
+}
+
+/* .profileButtons{
+    margin: 0px 10px 0px 10px;
+    background-color: var(--text-color-lighten);
+    padding: 1.15rem 1.5rem;
+    border-radius: .5rem;
+    transition: .3s;
+    box-shadow: 0 8px 24px hsl(var(--hue), var(--sat), var(--lig), .25);
+} */
+
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .skillsBox {
+        column-gap: 1rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .projectsContentGrid {
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 776px) {
+
+    .projectsContentGrid,
+    .skillsContentGrid {
+        grid-template-columns: repeat(2, 332px);
+    }
+
+    .skillsContentGrid {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projectsContentGrid {
+        gap: 2rem 3rem;
+    }
+
+    .projectsModal {
+        padding: 1.5rem;
+    }
+
+    .skillsTitle{
+        font-size: var(--normal-font-size);
+    }
+
+}
