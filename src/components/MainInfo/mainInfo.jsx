@@ -8,7 +8,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { TbArrowBigTop } from 'react-icons/tb'
 
-export default function MainInfo() {
+export default function MainInfo({ language }) {
+
 
     const scrollToTop = () => {
         scroll.scrollToTop();
@@ -29,8 +30,8 @@ export default function MainInfo() {
                                 offset={-575}
                                 duration={500}
                             >
-                                <button className={styles.filtersButton}>
-                                    Skills
+                                <button className={styles.filtersButton} language={language}>
+                                    {language === 'false' ? <p>Skills</p> : <p>Habilidades</p>}
                                 </button>
                             </Link>
 
@@ -43,7 +44,7 @@ export default function MainInfo() {
                                 duration={500}
                             >
                                 <button className={styles.filtersButton}>
-                                    Projects
+                                    {language === 'false' ? <p>Projects</p> : <p>Proyectos</p>}
                                 </button>
                             </Link>
 
@@ -56,7 +57,7 @@ export default function MainInfo() {
                                 duration={700}
                             >
                                 <button className={styles.filtersButton}>
-                                    Contact
+                                    {language === 'false' ? <p>Contact</p> : <p>Contacto</p>}
                                 </button>
                             </Link>
                         </ul>
@@ -79,7 +80,9 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Javascript</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}
+                                                        </span>
                                                     </div>
                                                 </div>
 
@@ -88,7 +91,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>React</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -97,7 +101,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Redux</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -108,7 +113,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>HTML</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -117,7 +123,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>CSS</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -126,7 +133,9 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Git</h3>
-                                                        <span className={styles.skillsLevel}>Medium</span>
+                                                        <span className={styles.skillsLevel}>
+                                                        {language === 'false' ? <p>Medium</p> : <p>Medio</p>}
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -147,7 +156,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Node.js</h3>
-                                                        <span className={styles.skillsLevel}>Medium</span>
+                                                        <span className={styles.skillsLevel}>
+                                                        {language === 'false' ? <p>Medium</p> : <p>Medio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -156,7 +166,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Express</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Medium</p> : <p>Medio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -165,7 +176,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Sequelize</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,7 +188,8 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>MySQL</h3>
-                                                        <span className={styles.skillsLevel}>Intermediate</span>
+                                                        <span className={styles.skillsLevel}>
+                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
                                                     </div>
                                                 </div>
 
@@ -185,7 +198,9 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Python</h3>
-                                                        <span className={styles.skillsLevel}>Basic</span>
+                                                        <span className={styles.skillsLevel}>
+                                                        {language === 'false' ? <p>Basic</p> : <p>Básico</p>}
+                                                        </span>
                                                     </div>
                                                 </div>
 
@@ -194,7 +209,9 @@ export default function MainInfo() {
 
                                                     <div>
                                                         <h3 className={styles.skillsName}>Django</h3>
-                                                        <span className={styles.skillsLevel}>Basic</span>
+                                                        <span className={styles.skillsLevel}>
+                                                        {language === 'false' ? <p>Basic</p> : <p>Básico</p>}
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,7 +221,9 @@ export default function MainInfo() {
                                 </div>
                             </Fade>
 
-                            <h1 id='projects'>PROJECTS</h1>
+                            <h1 id='projects'>
+                            {language === 'false' ? <p>PROJECTS</p> : <p>PROYECTOS</p>}
+                            </h1>
                             <div className={styles.projectsContentGrid}>
                                 {/* ARTICLE - 1 */}
                                 <div className={styles.projectsCard}>
@@ -271,7 +290,7 @@ export default function MainInfo() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -287,7 +306,9 @@ export default function MainInfo() {
             <br />
             <br />
             <Fade direction='left'>
-                <h1 className={styles.contactTitle} id='contact'>CONTACT</h1>
+                <h1 className={styles.contactTitle} id='contact'>
+                {language === 'false' ? <p>CONTACT</p> : <p>CONTACTO</p>}
+                </h1>
             </Fade>
         </Router>
     )

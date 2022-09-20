@@ -11,3 +11,7 @@
 .change-theme:hover{
     color: var(--first-color);
 }
+
+.text-download{
+    color: #fff;
+}

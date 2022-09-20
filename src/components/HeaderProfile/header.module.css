@@ -92,6 +92,7 @@
     display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: center;
+    align-items: center;
     column-gap: 2.5rem;
     margin-top: 7px;
 }
@@ -160,6 +161,24 @@
     cursor: pointer;
 }
 
+.containerLanguage{
+    margin-left: 10px;
+}
+
+.btnLanguage{
+    border-radius: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--text-color-lighten);
+    cursor: pointer;
+}
+
+.btnLanguageIcon{
+    color: var(--title-color);
+    font-size: 25px;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 /* @media screen and (max-width: 180px){
