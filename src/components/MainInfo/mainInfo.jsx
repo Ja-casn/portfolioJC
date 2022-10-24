@@ -1,315 +1,118 @@
 import React from 'react'
 import styles from '../MainInfo/main.module.css'
-import img2 from '../assets/img2.jpg'
 import { HiLink } from 'react-icons/hi'
-import { BsCheckCircle } from 'react-icons/bs'
 import { Fade } from 'react-awesome-reveal'
 import { BrowserRouter as Router } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { TbArrowBigTop } from 'react-icons/tb'
+import { dataProjects } from '../assets/dataProjects.js'
+import { Skills } from '../Skills/skills';
+
+
 
 export default function MainInfo({ language }) {
 
 
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
-    return (
-        <Router>
-            <Fade>
-                <div className={styles.mainContainer}>
-                    <div className={styles.filtersContainer}>
-                        {/* <---- FILTER TABS ----> */}
-                        <ul className={styles.filterContent}>
-                            <Link
-                                activeClass="active"
-                                to="skills"
-                                // spy={false}
-                                smooth={true}
-                                offset={-575}
-                                duration={500}
-                            >
-                                <button className={styles.filtersButton} language={language}>
-                                    {language === 'false' ? <p>Skills</p> : <p>Habilidades</p>}
-                                </button>
-                            </Link>
+  return (
+    <Router>
+      <Fade>
+        <div className={styles.mainContainer}>
+          <div className={styles.filtersContainer}>
+            {/* <---- FILTER TABS ----> */}
+            <ul className={styles.filterContent}>
+              <Link
+                activeClass="active"
+                to="skills"
+                // spy={false}
+                smooth={true}
+                offset={-575}
+                duration={500}
+              >
+                <button className={styles.filtersButton} language={language}>
+                  {language === 'false' ? <p>Skills</p> : <p>Habilidades</p>}
+                </button>
+              </Link>
 
-                            <Link
-                                activeClass="active"
-                                to="projects"
-                                // spy={false}
-                                smooth={true}
-                                offset={-30}
-                                duration={500}
-                            >
-                                <button className={styles.filtersButton}>
-                                    {language === 'false' ? <p>Projects</p> : <p>Proyectos</p>}
-                                </button>
-                            </Link>
+              <Link
+                activeClass="active"
+                to="projects"
+                // spy={false}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
+                <button className={styles.filtersButton}>
+                  {language === 'false' ? <p>Projects</p> : <p>Proyectos</p>}
+                </button>
+              </Link>
 
-                            <Link
-                                activeClass="active"
-                                to="contact"
-                                // spy={false}
-                                smooth={true}
-                                // offset={-30}
-                                duration={700}
-                            >
-                                <button className={styles.filtersButton}>
-                                    {language === 'false' ? <p>Contact</p> : <p>Contacto</p>}
-                                </button>
-                            </Link>
-                        </ul>
+              <Link
+                activeClass="active"
+                to="contact"
+                // spy={false}
+                smooth={true}
+                // offset={-30}
+                duration={700}
+              >
+                <button className={styles.filtersButton}>
+                  {language === 'false' ? <p>Contact</p> : <p>Contacto</p>}
+                </button>
+              </Link>
+            </ul>
 
-                        <div className={styles.filtersSections}>
-                            {/* <---- PROJECTS ----> */}
+            <div className={styles.filtersSections}>
+              
 
-                            {/* <---- SKILLS ----> */}
-                            <Fade direction='left'>
-                                <div className={styles.skillsContentGrid}>
-                                    <div className={styles.skillsArea}>
-                                        <h3 className={styles.skillsTitle} id='skills'>
-                                            Frontend Developer
-                                        </h3>
-
-                                        <div className={styles.skillsBox}>
-                                            <div className={styles.skillsGroup}>
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Javascript</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}
-                                                        </span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>React</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Redux</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className={styles.skillsGroup}>
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>HTML</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>CSS</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Git</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                        {language === 'false' ? <p>Medium</p> : <p>Medio</p>}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    {/* APARTADO 2 */}
-                                    <div className={styles.skillsArea}>
-                                        <h3 className={styles.skillsTitle}>
-                                            Backend Developer
-                                        </h3>
-
-                                        <div className={styles.skillsBox}>
-                                            <div className={styles.skillsGroup}>
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Node.js</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                        {language === 'false' ? <p>Medium</p> : <p>Medio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Express</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Medium</p> : <p>Medio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Sequelize</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className={styles.skillsGroup}>
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>MySQL</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                            {language === 'false' ? <p>Intermediate</p> : <p>Intermedio</p>}</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Python</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                        {language === 'false' ? <p>Basic</p> : <p>Básico</p>}
-                                                        </span>
-                                                    </div>
-                                                </div>
-
-                                                <div className={styles.skillsData}>
-                                                    <BsCheckCircle className={styles.checkCircle} />
-
-                                                    <div>
-                                                        <h3 className={styles.skillsName}>Django</h3>
-                                                        <span className={styles.skillsLevel}>
-                                                        {language === 'false' ? <p>Basic</p> : <p>Básico</p>}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </Fade>
-
-                            <h1 id='projects'>
-                            {language === 'false' ? <p>PROJECTS</p> : <p>PROYECTOS</p>}
-                            </h1>
-                            <div className={styles.projectsContentGrid}>
-                                {/* ARTICLE - 1 */}
-                                <div className={styles.projectsCard}>
-                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663290969/musicfyApp-pfGroup_bytuao.png'} alt='reference1' className={styles.projectsImg} />
+              <Skills />
+              
+              <h1 id='projects'>
+                {language === 'false' ? <p>PROJECTS</p> : <p>PROYECTOS</p>}
+              </h1>
 
 
-                                    <div className={styles.projectsModal}>
-                                        <div>
-                                            <span className={styles.projectSubtitle}>Web</span>
-                                            <h3 className={styles.projectTitle}>Streaming Music App</h3>
 
-                                            <button className={styles.projectButtonSmall}>
-                                                <a href='https://app-musicfy.vercel.app/' target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* ARTICLE - 2 */}
-                                <div className={styles.projectsCard}>
-                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663292106/countries1_hihbrb.png'} alt='reference1' className={styles.projectsImg} />
+              <div className={styles.projectsContentGrid}>
+                {/* ARTICLE - 1 */}
+                {dataProjects.map((item) => {
+                  console.log(item)
+                  return (
+                    <div className={styles.projectsCard} key={item.nameProject}>
+                      <img src={item.imageProject} alt='reference1' className={styles.projectsImg} />
 
 
-                                    <div className={styles.projectsModal}>
-                                        <div>
-                                            <span className={styles.projectSubtitle}>Web</span>
-                                            <h3 className={styles.projectTitle}>Countries App</h3>
+                      <div className={styles.projectsModal}>
+                        <div>
+                          <span className={styles.projectSubtitle}>{item.subtitle}</span>
+                          <h3 className={styles.projectTitle}> {item.nameProject} </h3>
 
-                                            <button className={styles.projectButtonSmall}>
-                                                <a target="_blank" href='https://pi-countriesjc.vercel.app/countries' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* ARTICLE - 3 */}
-                                <div className={styles.projectsCard}>
-                                    <img src={'https://res.cloudinary.com/djmckgy47/image/upload/v1663293933/portfolio_qz8wsl.png'} alt='reference1' className={styles.projectsImg} />
-
-
-                                    <div className={styles.projectsModal}>
-                                        <div>
-                                            <span className={styles.projectSubtitle}>Web</span>
-                                            <h3 className={styles.projectTitle}>Portfolio</h3>
-
-                                            <button className={styles.projectButtonSmall}>
-                                                <a target="_blank" href='https://portfolio-jc-steel.vercel.app/' rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* ARTICLE - 4 */}
-                                <div className={styles.projectsCard}>
-                                    <img src={img2} alt='reference1' className={styles.projectsImg} />
-
-
-                                    <div className={styles.projectsModal}>
-                                        <div>
-                                            <span className={styles.projectSubtitle}>Web</span>
-                                            <h3 className={styles.projectTitle}>In process</h3>
-
-                                            <button className={styles.projectButtonSmall}>
-                                                <HiLink className={styles.buttonLink} />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                          <button className={styles.projectButtonSmall}>
+                            <a href={item.deploy} target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
+                          </button>
                         </div>
+                      </div>
                     </div>
+                  )
+                })}
+              </div>
 
-                    <button onClick={() => scrollToTop()} className={styles.btnUp}>
-                        <TbArrowBigTop className={styles.arrowButton} />
-                    </button>
-                </div>
-            </Fade>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <Fade direction='left'>
-                <h1 className={styles.contactTitle} id='contact'>
-                {language === 'false' ? <p>CONTACT</p> : <p>CONTACTO</p>}
-                </h1>
-            </Fade>
-        </Router>
-    )
+            </div>
+          </div>
+
+          <button onClick={() => scrollToTop()} className={styles.btnUp}>
+            <TbArrowBigTop className={styles.arrowButton} />
+          </button>
+        </div>
+      </Fade>
+
+      <Fade direction='left'>
+        <h1 className={styles.contactTitle} id='contact'>
+          {language === 'false' ? <p>CONTACT</p> : <p>CONTACTO</p>}
+        </h1>
+      </Fade>
+    </Router>
+  )
 }

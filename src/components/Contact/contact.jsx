@@ -39,7 +39,7 @@ export default function Contact() {
                     placeholder='Name' 
                     className={styles.inputStyles} 
                     name='from_name' 
-                    required='true'
+                    // required
                     />
                     
                     <label className={styles.labelNames}>Email</label>
