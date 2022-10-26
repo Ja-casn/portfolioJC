@@ -4,6 +4,7 @@ import { BsCheckCircle } from 'react-icons/bs'
 import styles from '../MainInfo/main.module.css'
 
 export const Skills = ({ language }) => {
+
   return (
     <>
       {/* <---- SKILLS ----> */}

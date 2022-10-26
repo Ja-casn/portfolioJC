@@ -32,7 +32,7 @@ export default function MainInfo({ language }) {
                 offset={-575}
                 duration={500}
               >
-                <button className={styles.filtersButton} language={language}>
+                <button className={styles.filtersButton}>
                   {language === 'false' ? <p>Skills</p> : <p>Habilidades</p>}
                 </button>
               </Link>
@@ -65,10 +65,10 @@ export default function MainInfo({ language }) {
             </ul>
 
             <div className={styles.filtersSections}>
-              
 
-              <Skills />
-              
+
+              <Skills language={language} />
+
               <h1 id='projects'>
                 {language === 'false' ? <p>PROJECTS</p> : <p>PROYECTOS</p>}
               </h1>
@@ -78,11 +78,9 @@ export default function MainInfo({ language }) {
               <div className={styles.projectsContentGrid}>
                 {/* ARTICLE - 1 */}
                 {dataProjects.map((item) => {
-                  console.log(item)
                   return (
                     <div className={styles.projectsCard} key={item.nameProject}>
                       <img src={item.imageProject} alt='reference1' className={styles.projectsImg} />
-
 
                       <div className={styles.projectsModal}>
                         <div>
@@ -90,7 +88,13 @@ export default function MainInfo({ language }) {
                           <h3 className={styles.projectTitle}> {item.nameProject} </h3>
 
                           <button className={styles.projectButtonSmall}>
-                            <a href={item.deploy} target="_blank" rel="noopener noreferrer"><HiLink className={styles.buttonLink} /></a>
+                            <a
+                              href={item.deploy}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <HiLink className={styles.buttonLink} />
+                            </a>
                           </button>
                         </div>
                       </div>

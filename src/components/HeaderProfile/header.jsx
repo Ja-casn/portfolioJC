@@ -22,6 +22,7 @@ export default function Header() {
   const [stateTheme, setStateTheme] = useState(false)
   const [language, setLanguage] = useState('false')
 
+
   const toggleLanguage = () => {
     // language === 'false' ? setLanguage('true') : setLanguage('false')
     if (language === 'false') {
@@ -61,7 +62,7 @@ export default function Header() {
               </div>
 
               <h2 className={styles.profileName}>Jose Casanova</h2>
-              <h2 className={styles.profileProfession}>Web developer</h2>
+              <h2 className={styles.profileProfession}>Full Stack Developer</h2>
 
               <ul className={styles.profileSocial}>
                 <a href='https://www.linkedin.com/in/jacasanova98/' target='_blank' rel="noopener noreferrer" className={styles.profileSocialLink}>
